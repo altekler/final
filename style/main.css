@@ -164,7 +164,7 @@ html {
 .header__social {
   display: inline;
 }
-.header__social:hover {
+.header__social:hover svg path {
   fill: #F0145A;
 }
 .header__navigation {
@@ -181,6 +181,7 @@ html {
   font-weight: 700;
   font-size: 1.6em;
   color: #24A3FF;
+  border-bottom: 2px solid transparent;
 }
 .header__link:hover {
   color: #24A3FF;
@@ -197,5 +198,12 @@ html {
     grid-template-rows: auto;
     grid-template-areas: "contact" "logo" "navigation";
     gap: 30px;
+  }
+  .header__contact-language {
+    justify-content: start;
+    margin-bottom: 0;
+  }
+  .header__navigation {
+    justify-content: start;
   }
 }/*# sourceMappingURL=main.css.map */

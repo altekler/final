@@ -54,6 +54,7 @@
             background-color: $accent-color;
             border-radius: 8px;
         }
+
         &:hover {
             color: $gray--text-color;
             background-color: $gray--bg-color;
@@ -79,7 +80,11 @@
         display: inline;
 
         &:hover {
-            fill: $accent-color;
+            svg {
+                path {
+                    fill: $accent-color;
+                }
+            }
         }
     }
 
@@ -98,6 +103,7 @@
         font-weight: 700;
         font-size: 1.6em;
         color: $active--regular-color;
+        border-bottom: 2px solid transparent;
 
         &:hover {
             color: $active--regular-color;
@@ -107,18 +113,26 @@
         &--active {
             color: $accent-color;
             border-bottom: 2px solid $accent-color;
-
         }
     }
 }
 
 @media all and (max-width: 1024px) {
- .header {
-    &__inner {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "contact" "logo" "navigation";
-        gap: 30px;
+    .header {
+        &__inner {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "contact""logo""navigation";
+            gap: 30px;
+        }
+
+        &__contact-language {
+            justify-content: start;
+            margin-bottom: 0;
+        }
+
+        &__navigation {
+            justify-content: start;
+        }
     }
- }
 }
