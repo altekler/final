@@ -1,0 +1,97 @@
+@use "UI-kit.scss" as *;
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 10px;
+    font-family: 'Montserrat';
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 3.8em;
+    line-height: 4.6em;
+    background: $red_text-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.title {
+    &-bold {
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 3.7em;
+        color: $main--regular-color;
+    }
+
+    &-medium {
+        font-weight: 700;
+        font-size: 2.2em;
+        line-height: 2.7em;
+        color: $main--regular-color;
+    }
+
+    &-regular {
+        font-weight: 700;
+        font-size: 1.4em;
+        line-height: 1.7em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main--regular-color;
+    }
+
+    &-small {
+        font-weight: 700;
+        font-size: 1.6em;
+        line-height: 2em;
+        color: $main--regular-color;
+    }
+}
+
+.text {
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 2.6em;
+    color: $basic-black-color;
+}
+
+.list {
+    &-unordered {
+        font-weight: 400;
+        font-size: 1.8em;
+        line-height: 2.6em;
+        color: $basic-black-color;
+    }
+
+    &-ordered {
+        font-weight: 400;
+        font-size: 1.8em;
+        line-height: 2.6em;
+        color: $basic-black-color;
+    }
+}
+
+.link {
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 2em;
+    color: $active--regular-color;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+.dot-separator {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0 6px;
+    background-color: $gray--separator-color;
+}
