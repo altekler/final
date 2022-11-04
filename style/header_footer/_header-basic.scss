@@ -127,7 +127,8 @@
         height: 32px;
         margin-left: auto;
         cursor: pointer;
-        &:active{
+
+        &:active {
             background-color: $gray--separator-color;
             border-radius: 8px;
         }
@@ -160,20 +161,22 @@
     }
 
     &__wrapper {
-        display: flex;
+        display: none;
         position: absolute;
-        flex-direction: column;
-        justify-content: end;
-        opacity: 0;
-        height: 0;
-        width: 0;
-        padding: 0 8px;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
         background-color: $main--regular-color;
     }
 
     &__list {
+        position: absolute;
         display: flex;
         flex-direction: column;
+        left: 2.5%;
+        right: 2.5%;
+        bottom: -40%;
         gap: 15px;
         padding: 19px 12px 12px 12px;
         border-radius: 12px 12px 0px 0px;
@@ -228,17 +231,44 @@
         &:checked~ {
             .mobile-menu {
                 &__wrapper {
-                    top: 0;
-                    left: 0%;
-                    height: 100%;
-                    width: 96%;
-                    opacity: 1;
+                    display: block;
+
+                    animation: wrapper 0.1s ease-out;
+                    animation-fill-mode: forwards;
+
+                    .mobile-menu__list {
+                        animation: list-menu 0.3s ease-out;
+                        animation-fill-mode: forwards;
+                    }
                 }
             }
         }
     }
 }
 
+@keyframes wrapper {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes list-menu {
+    0% {
+        left: 2.5%;
+        right: 2.5%;
+        bottom: -40%;
+    }
+
+    100% {
+        left: 2.5%;
+        right: 2.5%;
+        bottom: 0%;
+    }
+}
 
 
 @media all and (max-width: 1024px) {
@@ -260,52 +290,63 @@
         }
     }
 }
+
 @media all and (max-width: 767px) {
     .header {
         padding-top: 0;
-        .container{
+
+        .container {
             padding: 0;
         }
-        &__inner{
+
+        &__inner {
             gap: 0;
         }
-        &__logo-page{
+
+        &__logo-page {
             padding: 0 15px;
         }
-        &__logo{
-            img{
-            max-width: 70px;
+
+        &__logo {
+            img {
+                max-width: 70px;
             }
         }
-        &__slash{
-            img{
+
+        &__slash {
+            img {
                 max-width: 12px;
             }
         }
-        &__page{
+
+        &__page {
             font-size: 2em;
         }
+
         &__contact-language {
             padding: 15px;
             justify-content: space-between;
             margin-bottom: 15px;
             background-color: $gray--bg-color;
         }
-        
-        &__adress{
+
+        &__adress {
             display: none;
         }
-        &__social{
+
+        &__social {
             display: none;
         }
 
         &__navigation {
-          display: none;
+            display: none;
         }
     }
-    .dot-separator{
+
+    .dot-separator {
         display: none;
     }
+
     .mobile-menu {
         &__btn {
             display: flex;

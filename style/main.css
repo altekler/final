@@ -228,19 +228,21 @@ html {
   top: -6px;
 }
 .mobile-menu__wrapper {
-  display: flex;
+  display: none;
   position: absolute;
-  flex-direction: column;
-  justify-content: end;
-  opacity: 0;
-  height: 0;
-  width: 0;
-  padding: 0 8px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   background-color: #323264;
 }
 .mobile-menu__list {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  left: 2.5%;
+  right: 2.5%;
+  bottom: -40%;
   gap: 15px;
   padding: 19px 12px 12px 12px;
   border-radius: 12px 12px 0px 0px;
@@ -283,13 +285,60 @@ html {
   display: none;
 }
 .mobile-menu__checkbox:checked ~ .mobile-menu__wrapper {
-  top: 0;
-  left: 0%;
-  height: 100%;
-  width: 96%;
-  opacity: 1;
+  display: block;
+  -webkit-animation: wrapper 0.1s ease-out;
+          animation: wrapper 0.1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.mobile-menu__checkbox:checked ~ .mobile-menu__wrapper .mobile-menu__list {
+  -webkit-animation: list-menu 0.3s ease-out;
+          animation: list-menu 0.3s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes wrapper {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wrapper {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes list-menu {
+  0% {
+    left: 2.5%;
+    right: 2.5%;
+    bottom: -40%;
+  }
+  100% {
+    left: 2.5%;
+    right: 2.5%;
+    bottom: 0%;
+  }
+}
+@keyframes list-menu {
+  0% {
+    left: 2.5%;
+    right: 2.5%;
+    bottom: -40%;
+  }
+  100% {
+    left: 2.5%;
+    right: 2.5%;
+    bottom: 0%;
+  }
+}
 @media all and (max-width: 1024px) {
   .header__inner {
     grid-template-columns: 1fr;
