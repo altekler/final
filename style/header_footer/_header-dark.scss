@@ -1,9 +1,8 @@
 @use "../UI-kit" as *;
 
 .header {
-    background-color: $basic-white-color;
+    background-color: transparent;
     padding-top: 50px;
-
     &__inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -35,7 +34,7 @@
     &__page {
         text-decoration: none;
         font-size: 3.6em;
-        color: $main--regular-color;
+        color: $basic-white-color;
     }
 
     &__contact-language {
@@ -51,7 +50,7 @@
         font-weight: 700;
         font-size: 1.2em;
         padding: 5px 7px;
-        color: $gray--text-color;
+        color: $basic-white-color;;
 
         &--active {
             color: $basic-white-color;
@@ -60,8 +59,8 @@
         }
 
         &:hover {
-            color: $gray--text-color;
-            background-color: $gray--bg-color;
+            color: $basic-white-color;
+            background-color: rgba(255, 255, 255, 0.2);
             border-radius: 8px;
         }
     }
@@ -70,18 +69,23 @@
         text-decoration: none;
         font-weight: 400;
         font-size: 1.6em;
-        color: $gray--text-color;
+        color: $basic-white-color;
     }
 
     &__number {
         text-decoration: none;
         font-weight: 700;
         font-size: 1.6em;
-        color: $gray--text-color;
+        color: $basic-white-color;
     }
 
     &__social {
         display: inline;
+        svg {
+            path {
+                fill: $basic-white-color;
+            }
+        }
 
         &:hover {
             svg {
@@ -106,12 +110,12 @@
         padding-bottom: 3px;
         font-weight: 700;
         font-size: 1.6em;
-        color: $active--regular-color;
+        color: $basic-white-color;
         border-bottom: 2px solid transparent;
 
         &:hover {
-            color: $active--regular-color;
-            border-bottom: 2px solid $active--regular-color;
+            color: $basic-white-color;
+            border-bottom: 2px solid $basic-white-color;
         }
 
         &--active {
@@ -133,7 +137,7 @@
         cursor: pointer;
 
         &:active {
-            background-color: $gray--separator-color;
+            background-color: rgba(245, 245, 250, 0.2);
             border-radius: 8px;
         }
     }
@@ -141,7 +145,7 @@
     &__icon {
         display: block;
         position: relative;
-        background: $main--regular-color;
+        background: $basic-white-color;
         width: 18px;
         height: 2px;
 
@@ -150,7 +154,7 @@
             content: "";
             display: block;
             position: absolute;
-            background: $main--regular-color;
+            background: $basic-white-color;
             width: 100%;
             height: 2px;
         }
@@ -332,7 +336,7 @@
             padding: 15px;
             justify-content: space-between;
             margin-bottom: 15px;
-            background-color: $gray--bg-color;
+            background-color: rgba(245, 245, 250, 0.2);
         }
 
         &__adress {

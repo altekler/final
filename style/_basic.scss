@@ -8,7 +8,7 @@ html {
 }
 
 .container{
-    max-width: 1300px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -16,7 +16,6 @@ html {
 .hero-title {
     font-weight: 700;
     font-size: 3.8em;
-    line-height: 4.6em;
     background: $red_text-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -24,41 +23,30 @@ html {
 }
 
 .title {
-    &-bold {
-        font-weight: 700;
+    font-weight: 700;
+    color: $main--regular-color;
+    &--bold {
         font-size: 3em;
-        line-height: 3.7em;
-        color: $main--regular-color;
     }
 
-    &-medium {
-        font-weight: 700;
+    &--medium {
         font-size: 2.2em;
-        line-height: 2.7em;
-        color: $main--regular-color;
     }
 
-    &-regular {
-        font-weight: 700;
+    &--regular {
         font-size: 1.4em;
-        line-height: 1.7em;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: $main--regular-color;
     }
 
-    &-small {
-        font-weight: 700;
+    &--small {
         font-size: 1.6em;
-        line-height: 2em;
-        color: $main--regular-color;
     }
 }
 
 .text {
     font-weight: 400;
     font-size: 1.6em;
-    line-height: 2.6em;
     color: $basic-black-color;
 }
 
@@ -77,11 +65,13 @@ html {
         color: $basic-black-color;
     }
 }
+a {
+    text-decoration: none;
+}
 
 .link {
     font-weight: 400;
     font-size: 1.6em;
-    line-height: 2em;
     color: $active--regular-color;
 
     &:hover {
