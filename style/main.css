@@ -857,6 +857,9 @@ img {
   .section-publications .hero-title {
     font-size: 3em;
   }
+  .section-publications__grid-container {
+    grid-template-columns: 1fr;
+  }
 }
 .footer {
   background-color: #F5F5FA;

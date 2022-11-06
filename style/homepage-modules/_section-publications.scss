@@ -82,9 +82,9 @@
             font-size: 3em;
         }
 
-        // &__grid-container {
-        //     grid-template-columns: 1fr;
-        //     grid-template-areas: "item-a" "item-b" "item-c";
-        // }
+        &__grid-container {
+            grid-template-columns: 1fr;
+            // grid-template-areas: "item-a" "item-b" "item-c";
+        }
     }
 }
