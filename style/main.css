@@ -603,8 +603,16 @@ img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow: scroll;
     margin-bottom: 60px;
+    margin-right: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .section-main__list-items::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: rgba(255, 255, 255, 0);
   }
   .section-main__list-item {
     text-align: left;
