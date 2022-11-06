@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/main.css">
-    <title>Main Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/services/main.css">
+    <title>Services</title>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo-page">
-                    <a href="./index.html" class="header__logo"><img src="./assets/images/header-footer/Logo-white.svg"
-                            alt="Logo"></a>
+                    <a href="../index.html" class="header__logo"><img src="../assets/images/header-footer/Logo-white.svg" alt="Logo"></a>
+                    <div class="header__slash"><img src="../assets/images/header-footer/Slash.svg" alt="Slash"></div>
+                    <a href="./services.html" class="header__page">services</a>
                     <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
                     <label for="checkbox" class="mobile-menu__btn">
                         <div class="mobile-menu__icon"></div>
@@ -30,8 +29,8 @@
                             <label for="checkbox" class="mobile-menu__btn">
                                 <div class="mobile-menu__icon"></div>
                             </label>
-                            <a href="/" class="mobile-menu__item">about us</a>
-                            <a href="./pages/services.html" class="mobile-menu__item">services</a>
+                            <a href="/" class="mobile-menu__item ">about us</a>
+                            <a href="./services.html" class="mobile-menu__item mobile-menu__item--active">services</a>
                             <a href="/" class="mobile-menu__item">team</a>
                             <a href="/" class="mobile-menu__item">publications</a>
                             <a href="/" class="mobile-menu__item">contact</a>
@@ -58,8 +57,8 @@
                     </a>
                 </div>
                 <nav class="header__navigation">
-                    <a href="/" class="header__link">about us</a>
-                    <a href="./pages/services.html" class="header__link">services</a>
+                    <a href="/" class="header__link ">about us</a>
+                    <a href="./services.html" class="header__link header__link--active">services</a>
                     <a href="/" class="header__link">team</a>
                     <a href="/" class="header__link">publications</a>
                     <a href="/" class="header__link">contact</a>
@@ -68,43 +67,8 @@
         </div>
     </header>
     <section class="section-main">
-        <div class="section-main__quote">
-            <h1 class="section-main__title">you legal solutions provider</h1>
-            <a href="/" class="section-main__vector"><svg width="42" height="42" viewBox="0 0 42 42" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_22728_11339)">
-                        <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
-                        <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_22728_11339">
-                            <rect width="42" height="42" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </a>
-        </div>
         <div class="container">
-            <div class="section-main__list">
-                <div class="section-main__list-items">
-                    <a href="/" class="section-main__list-item section-main__list-item--active">Consistent</a>
-                    <a href="/" class="section-main__list-item">Customer oriented</a>
-                    <a href="/" class="section-main__list-item">Innovative</a>
-                    <a href="/" class="section-main__list-item">Business oriented</a>
-                </div>
-                <div class="section-main__item-info">
-                    <h2 class="title title--bold">We turn the idea of legal services</h2>
-                    <p class="section-main__item-text">Consolidating many years of experience and practice, the
-                        company's lawyers accompany complex projects and achieve a number of important decisions for the
-                        industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
-                </div>
-            </div>
             <div class="section-main__cards">
-                <a href="./pages/services.html" class="link">SERVICES <svg width="8" height="11" viewBox="0 0 8 11" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
-                    </svg>
-                </a>
                 <h2 class="hero-title">What can we do better than others?</h2>
                 <div class="section-main__cards-container">
                     <a href="/" class="section-main__card">
@@ -363,128 +327,58 @@
         <div class="stack-item"></div>
         <div class="stack-item"></div>
     </div>
-    <section class="section-team-member">
-        <div class="container">
-            <div class="section-team-member__block">
-                <div class="section-team-member__photo"></div>
-                <div class="section-team-member__info">
-                    <a href="/" class="link">TEAM <svg width="8" height="11" viewBox="0 0 8 11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
-                        </svg>
-                    </a>
-                    <p class="hero-title">We are used to taking responsibility and always guarantee honest, timely
-                        assistance, even in situations where most are powerless.</p>
-                    <div class="text text--bold">Alexander Alexandrovsky</div>
-                    <div class="text">Managing partner</div>
-                </div>
-            </div>
-            <div class="circle-scroll">
-                <div class="circle-scroll__item circle-scroll__item--active"></div>
-                <div class="circle-scroll__item"></div>
-                <div class="circle-scroll__item"></div>
-            </div>
-        </div>
-
-    </section>
     <section class="section-company">
         <div class="container">
             <h5 class="title--regular">They already trust us</h5>
             <div class="section-company__grid-container">
                 <a href="/" class="section-company__item section-company__item--color-one">
-                    <div class="section-company__image"><img src="./assets/images/company/hillel.png" alt="hillel">
+                    <div class="section-company__image"><img src="../assets/images/company/hillel.png" alt="hillel">
                     </div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-two">
-                    <div class="section-company__image"><img src="./assets/images/company/wannabiz.png" alt="wannabiz">
+                    <div class="section-company__image"><img src="../assets/images/company/wannabiz.png" alt="wannabiz">
                     </div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-three">
-                    <div class="section-company__image"><img src="./assets/images/company/tapgerine.png"
+                    <div class="section-company__image"><img src="../assets/images/company/tapgerine.png"
                             alt="tapgerine"></div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-four">
-                    <div class="section-company__image"><img src="./assets/images/company/3dlook.png" alt="3dlook">
+                    <div class="section-company__image"><img src="../assets/images/company/3dlook.png" alt="3dlook">
                     </div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-five">
-                    <div class="section-company__image"><img src="./assets/images/company/orangear.png" alt="orangear">
+                    <div class="section-company__image"><img src="../assets/images/company/orangear.png" alt="orangear">
                     </div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-six">
-                    <div class="section-company__image"><img src="./assets/images/company/adtelligent.png"
+                    <div class="section-company__image"><img src="../assets/images/company/adtelligent.png"
                             alt="adtelligent"></div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-seven">
-                    <div class="section-company__image"><img src="./assets/images/company/clickky.png" alt="clickky">
+                    <div class="section-company__image"><img src="../assets/images/company/clickky.png" alt="clickky">
                     </div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-eight">
-                    <div class="section-company__image"><img src="./assets/images/company/eco-leasing.png"
+                    <div class="section-company__image"><img src="../assets/images/company/eco-leasing.png"
                             alt="eco-leasing"></div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-nine">
-                    <div class="section-company__image"><img src="./assets/images/company/ingratek.png" alt="infratek">
+                    <div class="section-company__image"><img src="../assets/images/company/ingratek.png" alt="infratek">
                     </div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-ten">
-                    <div class="section-company__image"><img src="./assets/images/company/city-par.png" alt="city-park">
+                    <div class="section-company__image"><img src="../assets/images/company/city-par.png" alt="city-park">
                     </div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-eleven">
-                    <div class="section-company__image"><img src="./assets/images/company/artprint.png" alt="artprint">
+                    <div class="section-company__image"><img src="../assets/images/company/artprint.png" alt="artprint">
                     </div>
                 </a>
                 <a href="/" class="section-company__item section-company__item--color-twelve">
-                    <div class="section-company__image"><img src="./assets/images/company/ultimatecard.png"
+                    <div class="section-company__image"><img src="../assets/images/company/ultimatecard.png"
                             alt="ultimatecard"></div>
                 </a>
-            </div>
-        </div>
-    </section>
-    <section class="section-publications">
-        <div class="container">
-            <a href="/" class="link">PUBLICATIONS <svg width="8" height="11" viewBox="0 0 8 11" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
-                </svg>
-            </a>
-            <h4 class="hero-title">We have something to tell</h4>
-            <div class="section-publications__grid-container">
-                <div class="section-publications__card item-a">
-                    <div class="section-publications__card-image"><img
-                            src="./assets/images/publication-page/Publication-1.jpg" alt="Publication-1"></div>
-                    <div class="section-publications__card-info">
-                        <a href="/" class="link">Equity associate</a>
-                        <span class="section-publications__card-date">April 22</span>
-                        <div class="line-separator"></div>
-                        <p class="text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before
-                            entering my parents told me that if I…</p>
-                    </div>
-                </div>
-                <div class="section-publications__card item-b">
-                    <div class="section-publications__card-image"><img
-                            src="./assets/images/publication-page/Publication-2.jpg" alt="Publication-2"></div>
-                    <div class="section-publications__card-info">
-                        <a href="/" class="link">Penalty for the Good Corporation: what will happen to Google and others
-                            for violating the GDPR</a>
-                        <span class="section-publications__card-date">September 29</span>
-                        <div class="line-separator"></div>
-                        <p class="text">And why the recovery of 50 million euros could be a fateful precedent According
-                            to Mind.ua January 21 National Commission for Data Protection.</p>
-                    </div>
-                </div>
-                <div class="section-publications__card item-c">
-                    <div class="section-publications__card-image"><img
-                            src="./assets/images/publication-page/Publication-3.jpg" alt="Publication-3"></div>
-                    <div class="section-publications__card-info">
-                        <a href="/" class="link">Millennial Testament</a>
-                        <span class="section-publications__card-date">August 19</span>
-                        <div class="line-separator"></div>
-                        <p class="text">What and how modern vloggers, opinion leaders and crypto-millionaires will
-                            inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -517,5 +411,4 @@
         </div>
     </footer>
 </body>
-
 </html>

@@ -1,0 +1,18 @@
+@use '../UI-kit' as *;
+.section-main {
+    padding-top: 176px;
+}
+@media all and (max-width: 1024px) {
+    .section-main {
+        padding-top: 280px;
+    }
+}
+@media all and (max-width: 767px) {
+    .section-main {
+        padding-top: 132px;
+    }
+}
+
+.section-company{
+    padding-top: 80px;
+}

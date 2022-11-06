@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("../../assets/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  src: url("../../assets/fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 html {
@@ -668,74 +668,6 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   }
 }
-.section-team-member {
-  padding-top: 80px;
-  padding-bottom: 30px;
-}
-.section-team-member .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.section-team-member__block {
-  display: flex;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  background-color: #F5F5FA;
-  overflow: hidden;
-}
-.section-team-member__photo {
-  min-width: 400px;
-  background: url(../assets/images/teampage/Team-1.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.section-team-member__info {
-  padding: 30px;
-}
-.section-team-member__info .link {
-  font-size: 1.4em;
-  font-weight: 700;
-  display: inline-block;
-  margin-bottom: 5px;
-}
-.section-team-member__info .link:hover svg path {
-  stroke: #F0145A;
-}
-.section-team-member__info .hero-title {
-  margin-bottom: 30px;
-}
-.section-team-member__info .text {
-  color: #B3B3BA;
-  line-height: 20px;
-}
-
-@media all and (max-width: 1024px) {
-  .section-team-member__block {
-    flex-direction: column;
-  }
-  .section-team-member__photo {
-    min-height: 500px;
-  }
-}
-@media all and (max-width: 767px) {
-  .section-team-member {
-    padding-top: 50px;
-  }
-  .section-team-member__photo {
-    min-width: auto;
-    min-height: 500px;
-  }
-  .section-team-member__info .hero-title {
-    font-size: 3em;
-    margin-bottom: 30px;
-  }
-  .section-team-member__info .text {
-    color: #B3B3BA;
-    line-height: 20px;
-  }
-}
 .section-company {
   padding-top: 30px;
   padding-bottom: 60px;
@@ -808,56 +740,6 @@ img {
     padding: 0;
   }
 }
-.section-publications {
-  background-color: #F5F5FA;
-  padding: 30px 0;
-}
-.section-publications .link {
-  font-size: 1.4em;
-  font-weight: 700;
-  display: inline-block;
-  margin-bottom: 5px;
-}
-.section-publications .link:hover svg path {
-  stroke: #F0145A;
-}
-.section-publications .hero-title {
-  margin-bottom: 30px;
-  line-height: 110%;
-}
-.section-publications__grid-container {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-}
-.section-publications__card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  background-color: #ffffff;
-  overflow: hidden;
-}
-.section-publications__card-info {
-  padding: 30px;
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
-}
-.section-publications__card-info .text {
-  font-size: 1.4em;
-  line-height: 150%;
-}
-.section-publications__card-date {
-  font-size: 1.2em;
-  font-weight: 700;
-  color: #B3B3BA;
-}
-
-@media all and (max-width: 767px) {
-  .section-publications .hero-title {
-    font-size: 3em;
-  }
-}
 .footer {
   background-color: #F5F5FA;
 }
@@ -925,4 +807,21 @@ img {
     align-items: center;
     gap: 10px;
   }
+}
+.section-main {
+  padding-top: 176px;
+}
+
+@media all and (max-width: 1024px) {
+  .section-main {
+    padding-top: 280px;
+  }
+}
+@media all and (max-width: 767px) {
+  .section-main {
+    padding-top: 132px;
+  }
+}
+.section-company {
+  padding-top: 80px;
 }/*# sourceMappingURL=main.css.map */
