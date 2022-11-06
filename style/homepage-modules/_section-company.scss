@@ -1,0 +1,82 @@
+@use "../UI-kit" as *;
+
+.section-company {
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    .title--regular {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__grid-container {
+        display: grid;
+        border-radius: 12px;
+        overflow: hidden;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    &__item {
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--color-one {
+            background-color: #1C4280;
+        }
+
+        &--color-two {
+            background-color: #143646;
+        }
+        &--color-three {
+            background-color: #F48B30;
+        }
+        &--color-four {
+            background-color: #9E4DC3;
+        }
+        &--color-five {
+            background-color: #FD9339;
+        }
+        &--color-six {
+            background-color: #E2E2E4;
+        }
+        &--color-seven{
+            background-color: #C71C36;
+        }
+        &--color-eight {
+            background-color: #DCF3F9;
+        }
+        &--color-nine {
+            background-color: #EAEAEA;
+        }
+        &--color-ten {
+            background-color: #282240;
+        }
+        &--color-eleven {
+            background-color: #1D4568;
+        }
+        &--color-twelve {
+            background-color: #000000;
+        }
+    }
+
+    &__image {
+        max-width: 150px;
+    }
+}
+@media all and (max-width: 767px) {
+    .section-company {
+        padding-bottom: 0;
+        &__grid-container {
+
+            border-radius: 0;
+
+            
+            grid-template-columns: 1fr;
+        }
+        .container{
+            padding: 0;
+        }
+    }
+}

@@ -3,4 +3,7 @@
 @use 'basic';
 @use './header_footer/header-dark';
 @use './homepage-modules/section-main';
+@use './homepage-modules/section-team-member';
+@use './homepage-modules/section-company';
+@use './homepage-modules/section-publications';
 @use './header_footer/footer';

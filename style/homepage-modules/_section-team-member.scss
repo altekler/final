@@ -1,0 +1,82 @@
+@use "../UI-kit" as *;
+
+.section-team-member{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__block{
+        display: flex;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        background-color: $gray--bg-color;
+        overflow: hidden;
+    }
+    &__photo{
+        min-width: 400px;
+        background: url(../assets/images/teampage/Team-1.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__info{
+        padding: 30px;
+        .link{
+            font-size: 1.4em;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 5px;
+            &:hover{
+                svg{
+                    path{
+                        stroke: $accent-color;
+                    }
+                }
+            }
+        }
+        .hero-title{
+            margin-bottom: 30px;
+        }
+        .text{
+            color: $gray--text-color;
+            line-height: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .section-team-member{
+        &__block{
+            flex-direction: column;
+        }
+        &__photo{
+            min-height: 500px;
+            
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .section-team-member{
+        padding-top: 50px;
+        &__photo{
+            min-width: auto;
+            min-height: 500px;
+            
+        }
+        &__info{
+            
+            .hero-title{
+                font-size: 3em;
+                margin-bottom: 30px;
+            }
+            .text{
+                color: $gray--text-color;
+                line-height: 20px;
+            }
+        }
+    }
+}

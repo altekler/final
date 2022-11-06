@@ -6,11 +6,27 @@ html {
     line-height: 10px;
     font-family: 'Montserrat';
 }
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
 
 .container{
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
+}
+@media all and (max-width: 1024px) {
+    .container{
+        padding: 0 60px;
+    }
+}
+@media all and (max-width: 767px) {
+    .container{
+        padding: 0 30px;
+    }
 }
 
 .hero-title {
@@ -48,7 +64,11 @@ html {
     font-weight: 400;
     font-size: 1.6em;
     color: $basic-black-color;
+    &--bold{
+        font-weight: 700;
+    }
 }
+
 
 .list {
     &-unordered {
@@ -65,9 +85,7 @@ html {
         color: $basic-black-color;
     }
 }
-a {
-    text-decoration: none;
-}
+
 
 .link {
     font-weight: 400;
@@ -84,4 +102,26 @@ a {
     border-radius: 3px;
     margin: 0 6px;
     background-color: $gray--separator-color;
+}
+.line-separator{
+    height: 4px;
+    background-color: $gray--separator-color;
+}
+.circle-scroll{
+    display: flex;
+    cursor: pointer;
+    gap:15px;
+    &__item{
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        background-color: $active--regular-color;
+        opacity: 0.2;
+        &--active{
+            opacity: 1;
+        }
+        &:hover{
+            outline: 4px solid $gray--separator-color;
+        }
+    }
 }
