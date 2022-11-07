@@ -13,7 +13,7 @@
         display: grid;
         border-radius: 12px;
         overflow: hidden;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     }
 
     &__item {
@@ -65,18 +65,30 @@
         max-width: 150px;
     }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 1440px) {
     .section-company {
         padding-bottom: 0;
         &__grid-container {
-
             border-radius: 0;
-
-            
-            grid-template-columns: 1fr;
         }
         .container{
+            max-width: none;
             padding: 0;
+        }
+    }
+}
+@media all and (max-width: 992px) {
+    .section-company {
+        &__grid-container {
+            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .section-company {
+        &__grid-container {
+            grid-template-columns: 1fr;
         }
     }
 }

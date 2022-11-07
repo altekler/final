@@ -7,17 +7,18 @@
     padding-bottom: 60px;
 
     &__quote {
-        padding-top: 377px;
+        padding-top: 477px;
         padding-bottom: 30px;
         background: url(../assets/images/homepage/Symbol.png);
         background-position: center;
         background-repeat: no-repeat;
+        background-size: contain;
         margin-bottom: 60px;
     }
 
     &__title {
         margin: 0 auto;
-        margin-bottom: 305px;
+        margin-bottom: 405px;
         font-weight: 700;
         font-size: 3.8em;
         color: $basic-white-color;
@@ -127,7 +128,7 @@
         &-container {
             display: grid;
             gap: 60px;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
         }
     }
 
@@ -185,7 +186,21 @@
 
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1440px) {
+    .section-main {
+    
+        &__quote {
+            padding-top: 377px;
+            margin-bottom: 60px;
+            background-size: auto;
+        }
+        &__title {
+            margin-bottom: 305px;
+        }
+}
+}
+
+@media all and (max-width: 992px) {
     .section-main {
         margin-top: -220px;
 
@@ -238,6 +253,17 @@
     }
 }
 
+
+@media all and (max-width: 992px) {
+    .section-main {
+        &__cards {
+            &-container {
+            grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+            }
+        }
+}
+}
+
 @media all and (max-width: 767px) {
     .section-main {
         margin-top: -95px;
@@ -280,7 +306,7 @@
 
         &-container {
             gap: 30px;
-            grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+            grid-template-columns: 1fr;
         }
     }
 }
