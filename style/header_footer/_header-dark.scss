@@ -3,6 +3,9 @@
 .header {
     background-color: transparent;
     padding-top: 50px;
+    position: relative;
+    z-index: 2;
+
     &__inner {
         display: grid;
         grid-template-columns: 300 1fr;
@@ -19,6 +22,7 @@
 
     &__logo {
         display: inline-block;
+
         img {
             max-width: 130px;
         }
@@ -26,7 +30,8 @@
 
     &__slash {
         display: inline-block;
-        img{
+
+        img {
             max-width: 21px;
         }
     }
@@ -50,7 +55,8 @@
         font-weight: 700;
         font-size: 1.2em;
         padding: 5px 7px;
-        color: $basic-white-color;;
+        color: $basic-white-color;
+        ;
 
         &--active {
             color: $basic-white-color;
@@ -81,6 +87,7 @@
 
     &__social {
         display: inline;
+
         svg {
             path {
                 fill: $basic-white-color;

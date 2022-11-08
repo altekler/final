@@ -3,10 +3,37 @@
 .section-main {
     background: $supersoft-gradient;
     margin-top: -125px;
+    padding-top: 125px;
     border-radius: 0px 0px 12px 12px;
     padding-bottom: 60px;
+    position: relative;
+    z-index: 1;
 
+    &::before {
+        content: "";
+        position: absolute;
+        height: 10px;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        border-radius: 0px 0px 12px 12px;
+        background-color: #CACADB;
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        height: 10px;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        border-radius: 0px 0px 12px 12px;
+        background-color: #E7E7F2;
+    }
+
+    // минусовый марджин повторно используется что бы можно было повторно использовать секцию и не фиксить падинг
     &__quote {
+        margin-top: -125px;
         padding-top: 477px;
         padding-bottom: 30px;
         background: url(../assets/images/homepage/Symbol.png);
@@ -165,46 +192,30 @@
     }
 }
 
-.stack {
-    display: block;
-    position: relative;
-    z-index: 1;
-    margin-bottom: -20px;
 
-    &-item {
-        height: 10px;
-        margin: 0 20px;
-        border-radius: 0px 0px 12px 12px;
-        background-color: #CACADB;
-
-    }
-
-    :last-child {
-        margin: 0 40px;
-        background-color: #E7E7F2;
-    }
-
-}
 
 @media all and (max-width: 1440px) {
     .section-main {
-    
+
         &__quote {
             padding-top: 377px;
             margin-bottom: 60px;
             background-size: auto;
         }
+
         &__title {
             margin-bottom: 305px;
         }
-}
+    }
 }
 
 @media all and (max-width: 992px) {
     .section-main {
         margin-top: -220px;
+        padding-top: 220px;
 
         &__quote {
+            margin-top: -220px;
             padding-top: 489px;
             background-size: cover;
         }
@@ -227,11 +238,12 @@
                 margin-right: 0;
                 -ms-overflow-style: none;
                 scrollbar-width: none;
+
                 &::-webkit-scrollbar {
                     width: 0px;
                     height: 0px;
                     background: rgba(255, 255, 255, 0.0);
-                  }
+                }
             }
 
             &-item {
@@ -250,64 +262,69 @@
                 padding-top: 60px;
             }
         }
+
+        &__cards {
+            &-container {
+                grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+            }
+        }
     }
 }
 
 
-@media all and (max-width: 992px) {
-    .section-main {
-        &__cards {
-            &-container {
-            grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
-            }
-        }
-}
-}
-
 @media all and (max-width: 767px) {
     .section-main {
         margin-top: -95px;
+        padding-top: 95px;
 
         &__quote {
+            margin-top: -95px;
             padding-top: 231px;
             margin-bottom: 30px;
         }
+
         &__title {
             max-width: 315px;
             line-height: 110%;
             margin-bottom: 159px;
         }
-    
-    &__list {
-        margin-bottom: 30px;
-        &-items {
+
+        &__list {
             margin-bottom: 30px;
-        }
-        &-item {
-            font-size: 3em;
-        }
-    }
-    &__item{
-        &-info{
-            padding-top: 30px;
-            .title{
-                font-size: 2em;
+
+            &-items {
+                margin-bottom: 30px;
+            }
+
+            &-item {
+                font-size: 3em;
             }
         }
-        &-text{
-            font-size: 1.9em;
-        }
-    }
-    &__cards {
-        .hero-title {
-            font-size: 3em;
-            margin-bottom: 30px;
+
+        &__item {
+            &-info {
+                padding-top: 30px;
+
+                .title {
+                    font-size: 2em;
+                }
+            }
+
+            &-text {
+                font-size: 1.9em;
+            }
         }
 
-        &-container {
-            gap: 30px;
-            grid-template-columns: 1fr;
+        &__cards {
+            .hero-title {
+                font-size: 3em;
+                margin-bottom: 30px;
+            }
+
+            &-container {
+                gap: 30px;
+                grid-template-columns: 1fr;
+            }
         }
     }
-}
 }

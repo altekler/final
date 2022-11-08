@@ -1,78 +1,93 @@
 @use "../UI-kit" as *;
-.footer{
+
+.footer {
     background-color: $gray--bg-color;
-    &__inner{
+
+    &__inner {
         display: flex;
         justify-content: space-between;
         padding: 30px 0;
         border-top: 2px solid $gray--separator-color;
     }
-    &__adress{
+
+    &__adress {
         display: flex;
         align-items: center;
         margin-bottom: 21px;
+
         .text {
             color: $main--regular-color;
         }
-        .link{
+
+        .link {
             text-decoration: none;
             font-weight: 700;
         }
     }
-    &__contact{
+
+    &__contact {
         display: flex;
         align-items: center;
-        .text{
+
+        .text {
             text-decoration: none;
             font-weight: 700;
             color: $main--regular-color;
         }
-        .link{
+
+        .link {
             text-decoration: none;
             font-weight: 700;
         }
 
     }
-    &__social{
-        svg{
+
+    &__social {
+        svg {
             max-width: 38px;
         }
-        &:hover{
-            svg{
-                path{
+
+        &:hover {
+            svg {
+                path {
                     fill: $accent-color;
                 }
             }
         }
     }
 }
-.copyright{
+
+.copyright {
     font-weight: 400;
-font-size: 1.6em;
-color: $gray--text-color;
+    font-size: 1.6em;
+    color: $gray--text-color;
 }
+
 @media all and (max-width: 992px) {
-    .footer{
-    &__inner{
-        flex-direction: column;
-        align-items: center;
-    }
-    &__contact{
-        margin-bottom: 30px;
-    }
-}
-}
-@media all and (max-width: 767px) {
-    .footer{
-        &__adress{
+    .footer {
+        &__inner {
             flex-direction: column;
             align-items: center;
-            gap:10px;
         }
-        &__contact{
+
+        &__contact {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .footer {
+        &__adress {
             flex-direction: column;
             align-items: center;
-            gap:10px;
+            gap: 10px;
+        }
+
+        &__contact {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
     }
 }

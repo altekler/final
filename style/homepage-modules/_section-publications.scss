@@ -27,8 +27,8 @@
     &__grid-container {
         display: grid;
         gap: 30px;
-        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-        
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
     }
 
     &__card {
@@ -55,22 +55,16 @@
             font-weight: 700;
             color: $gray--text-color;
         }
+
     }
 }
 
-@media all and (max-width: 992px) {
+// указал 1023, а не 1024 потому что в макете, на 1024 должно еще быть три колонки
+@media all and (max-width: 1023px) {
     .section-publications {
-        &__grid-container {
-            grid-template-columns: repeat(auto-fit, minmax(309px, 1fr));
-            grid-template-areas: "item-a item-b" "item-c item-c";
-            .item-a {
-                grid-area: item-a;
-            }
-            .item-b {
-                grid-area: item-b;
-            }
-            .item-c {
-                grid-area: item-c;
+        &__card {
+            &:last-child {
+                grid-column: 1 / 3;
             }
         }
     }
@@ -84,7 +78,12 @@
 
         &__grid-container {
             grid-template-columns: 1fr;
-            grid-template-areas: "item-a" "item-b" "item-c";
+        }
+
+        &__card {
+            &:last-child {
+                grid-column: 1 / 2;
+            }
         }
     }
 }

@@ -6,20 +6,23 @@ html {
     line-height: 10px;
     font-family: 'Montserrat';
 }
+
 a {
     text-decoration: none;
 }
+
 img {
     max-width: 100%;
 }
 
-.container{
+.container {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 30px;
 }
+
 @media all and (max-width: 1440px) {
-    .container{
+    .container {
         max-width: 1320px;
     }
 }
@@ -37,6 +40,7 @@ img {
 .title {
     font-weight: 700;
     color: $main--regular-color;
+
     &--bold {
         font-size: 3em;
     }
@@ -60,7 +64,8 @@ img {
     font-weight: 400;
     font-size: 1.6em;
     color: $basic-black-color;
-    &--bold{
+
+    &--bold {
         font-weight: 700;
     }
 }
@@ -92,6 +97,7 @@ img {
         color: $accent-color;
     }
 }
+
 .dot-separator {
     width: 6px;
     height: 6px;
@@ -99,24 +105,29 @@ img {
     margin: 0 6px;
     background-color: $gray--separator-color;
 }
-.line-separator{
+
+.line-separator {
     height: 4px;
     background-color: $gray--separator-color;
 }
-.circle-scroll{
+
+.circle-scroll {
     display: flex;
     cursor: pointer;
-    gap:15px;
-    &__item{
+    gap: 15px;
+
+    &__item {
         width: 16px;
         height: 16px;
         border-radius: 8px;
         background-color: $active--regular-color;
         opacity: 0.2;
-        &--active{
+
+        &--active {
             opacity: 1;
         }
-        &:hover{
+
+        &:hover {
             outline: 4px solid $gray--separator-color;
         }
     }

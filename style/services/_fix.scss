@@ -1,18 +1,15 @@
 @use '../UI-kit' as *;
+
 .section-main {
-    padding-top: 176px;
-}
-@media all and (max-width: 992px) {
-    .section-main {
-        padding-top: 280px;
-    }
-}
-@media all and (max-width: 767px) {
-    .section-main {
-        padding-top: 132px;
+    &__cards {
+        padding-top: 60px;
     }
 }
 
-.section-company{
-    padding-top: 80px;
+@media all and (max-width: 767px) {
+    .section-main {
+        &__cards {
+            padding-top: 40px;
+        }
+    }
 }

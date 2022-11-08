@@ -29,33 +29,43 @@
         &--color-two {
             background-color: #143646;
         }
+
         &--color-three {
             background-color: #F48B30;
         }
+
         &--color-four {
             background-color: #9E4DC3;
         }
+
         &--color-five {
             background-color: #FD9339;
         }
+
         &--color-six {
             background-color: #E2E2E4;
         }
-        &--color-seven{
+
+        &--color-seven {
             background-color: #C71C36;
         }
+
         &--color-eight {
             background-color: #DCF3F9;
         }
+
         &--color-nine {
             background-color: #EAEAEA;
         }
+
         &--color-ten {
             background-color: #282240;
         }
+
         &--color-eleven {
             background-color: #1D4568;
         }
+
         &--color-twelve {
             background-color: #000000;
         }
@@ -65,30 +75,26 @@
         max-width: 150px;
     }
 }
+
 @media all and (max-width: 1440px) {
     .section-company {
         padding-bottom: 0;
+
         &__grid-container {
             border-radius: 0;
         }
-        .container{
+
+        .container {
             max-width: none;
             padding: 0;
         }
     }
 }
+
 @media all and (max-width: 992px) {
     .section-company {
         &__grid-container {
-            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-        }
-    }
-}
-
-@media all and (max-width: 767px) {
-    .section-company {
-        &__grid-container {
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
         }
     }
 }
