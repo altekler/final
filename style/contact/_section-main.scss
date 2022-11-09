@@ -1,0 +1,75 @@
+@use '../UI-kit' as *;
+.section-main{
+    &__inner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        padding: 60px 110px;
+    }
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        .text{
+            font-size: 2.1em;
+            line-height: 143%;
+        }
+        .line-separator{
+            margin: 30px 0;
+        }
+        .link{
+            font-size: 2.1em;
+        }
+        .text--color-alt{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .text{
+            font-size: 1.2em;
+            line-height: 133%;
+            letter-spacing: 1px;
+text-transform: uppercase;
+color: $active--regular-color;
+        }
+        &:hover{
+            svg{
+                path{
+                    fill: $accent-color;
+                }
+            }
+            .text{
+                color: $accent-color;
+            }
+        }
+    }
+}
+@media all and (max-width: 1024px) {
+    .section-main{
+        &__inner{
+            padding: 60px 0;
+}
+    }
+}
+@media all and (max-width: 992px) {
+    .section-main{
+        &__inner{
+            display: grid;
+            grid-template-columns: 1fr;
+
+}
+    }
+}
+@media all and (max-width: 767px) {
+    .section-main{
+        &__inner{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 30px 0;
+            gap: 30px;
+}
+    }
+}

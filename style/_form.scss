@@ -1,0 +1,124 @@
+@use 'UI-kit' as *;
+
+.form {
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 12px;
+        background-color: $gray--bg-color;
+
+        .hero-title {
+            font-size: 3em;
+            margin-bottom: 30px;
+            line-height: 115%;
+        }
+
+        .botton {
+            margin-top: 15px;
+        }
+    }
+
+    &__input {
+        box-sizing: border-box;
+        border: none;
+        width: 100%;
+        padding: 15px;
+        border-radius: 8px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 15px;
+
+
+        &::placeholder {
+            color: $gray--text-color;
+        }
+        &:focus{
+            outline: 1px solid $active--regular-color;
+           
+            &:invalid{
+                outline: 1px solid #FF0000;
+
+                &::placeholder {
+                    color: #FF0000;
+                }
+            }
+
+        // &:required{
+        //     outline: 1px solid #FF0000;
+        
+        //     &::placeholder {
+        //         color: #FF0000;
+        //     }
+        // }
+        }
+    }
+
+    &__text-area {
+        box-sizing: border-box;
+        border: none;
+        width: 100%;
+        min-height: 130px;
+        resize: none;
+        padding: 15px;
+        border-radius: 8px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 30px;
+
+        &::placeholder {
+            color: $gray--text-color;
+        }
+        &:focus{
+            outline: 1px solid $active--regular-color;
+            &:invalid{
+                outline: 1px solid #FF0000;
+
+                &::placeholder {
+                    color: #FF0000;
+                }
+            }
+
+        }
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $gray--text-color;
+        margin-bottom: 15px;
+    }
+
+    &__wrapper {
+        display: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(50, 50, 100, 0.7);
+        z-index: 5;
+    }
+
+    &__checkbox {
+        display: none;
+
+        &:checked~ {
+            .form__wrapper {
+                display: block;
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 767px) {
+    .form {
+        &__btn {
+            margin-bottom: 30px;
+        }
+    }
+}

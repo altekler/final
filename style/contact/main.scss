@@ -3,6 +3,9 @@
 @use '../basic';
 @use '../header_footer/header';
 @use '../header_footer/mobile-menu';
-@use '../homepage-modules/section-main';
-@use '../homepage-modules/section-company';
+@use '../header_footer/header-change_color';
+@use 'section-main';
+@use '../form';
 @use '../header_footer/footer';
+
+

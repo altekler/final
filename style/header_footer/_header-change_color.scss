@@ -1,0 +1,57 @@
+@use "../UI-kit" as *;
+
+.header {
+    background-color: $basic-white-color;
+    &__page {
+        color: $main--regular-color;
+    }
+    &__language {
+        color: $gray--text-color;
+        &--active {
+            color: $basic-white-color;
+        }
+
+        &:hover {
+            color: $gray--text-color;
+            background-color: $gray--bg-color;
+        }
+    }
+
+    &__adress {
+        color: $gray--text-color;
+    }
+
+    &__number {
+        color: $gray--text-color;
+    }
+
+    &__social {
+        svg {
+            path {
+                fill: #B3B3BA;
+            }
+        }
+    }
+
+    &__link {
+        color: $active--regular-color;
+        &--active {
+            color: $accent-color;
+        }
+        &:hover {
+            color: $active--regular-color;
+            border-bottom: 2px solid $active--regular-color;
+        }
+    }
+}
+.mobile-menu {
+    &__icon {
+        background: $main--regular-color;
+
+        &::after,
+        &::before {
+            background: $main--regular-color;
+        }
+}
+}
+

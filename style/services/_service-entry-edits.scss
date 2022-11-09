@@ -1,0 +1,57 @@
+@use "../UI-kit.scss" as *;
+
+.section-main {
+    &__card {
+        width: 100%;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+
+            .botton{
+               width: auto;
+               margin-bottom: 60px;
+            }
+    }
+
+    .hero-title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .text {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+.service-block{
+    .title{
+        color: $basic-white-color;
+        margin-bottom: 30px;
+    }
+    &__list{
+        display: grid;
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+}
+@media all and (max-width: 767px) {
+    .section-main {
+        &__card {
+            .form__btm{
+                margin-bottom: 30px;
+            }
+            .hero-title{
+                font-size: 3em;
+            }
+        }
+    }
+    .service-block{
+        &__list{
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+}

@@ -14,6 +14,31 @@ a {
 img {
     max-width: 100%;
 }
+ul{
+    list-style-type: disc;
+    li{
+        color:$accent-color;
+        font-size: 1.8em;
+        line-height: 144%;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+ol{
+    list-style-type: decimal;
+    li{
+        color:$accent-color;
+        font-size: 1.8em;
+        line-height: 144%;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        }
+}
+
 
 .container {
     max-width: 1600px;
@@ -68,6 +93,15 @@ img {
     &--bold {
         font-weight: 700;
     }
+    &--color-white{
+        color:$basic-white-color;
+    }
+    &--color-regular{
+        color: $main--regular-color;
+    }
+    &--color-alt{
+        color: $main--alt-color;
+    }
 }
 
 
@@ -107,6 +141,7 @@ img {
 }
 
 .line-separator {
+    width: 100%;
     height: 4px;
     background-color: $gray--separator-color;
 }
@@ -130,5 +165,24 @@ img {
         &:hover {
             outline: 4px solid $gray--separator-color;
         }
+    }
+}
+.botton{
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.6em;
+    padding: 18px 30px;
+    text-align: center;
+    color: $basic-white-color;
+    background-color: $active--regular-color;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: $active--hover-color;
+    }
+    &:active{
+       background-color: $active--active-color;
     }
 }

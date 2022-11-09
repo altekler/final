@@ -1,9 +1,7 @@
 @use "../UI-kit" as *;
 
 .section-team-member {
-    padding-top: 80px;
-    padding-bottom: 30px;
-
+    margin-bottom: 60px;
     .container {
         display: flex;
         flex-direction: column;
@@ -70,8 +68,6 @@
 
 @media all and (max-width: 767px) {
     .section-team-member {
-        padding-top: 50px;
-
         &__photo {
             min-width: auto;
             min-height: 500px;

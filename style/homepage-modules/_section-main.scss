@@ -4,6 +4,7 @@
     background: $supersoft-gradient;
     margin-top: -125px;
     padding-top: 125px;
+    margin-bottom: 80px;
     border-radius: 0px 0px 12px 12px;
     padding-bottom: 60px;
     position: relative;
@@ -73,7 +74,6 @@
     &__list {
         display: flex;
         justify-content: center;
-        margin-bottom: 60px;
 
         &-items {
             display: flex;
@@ -127,6 +127,7 @@
     }
 
     &__cards {
+        padding-top: 60px;
         .link {
             display: flex;
             align-items: center;
@@ -208,6 +209,15 @@
         }
     }
 }
+@media all and (max-width: 1024px) {
+    .section-main {
+        &__item {
+            &-info {
+                max-width: 405px;
+            }
+        }
+    }
+}
 
 @media all and (max-width: 992px) {
     .section-main {
@@ -255,6 +265,7 @@
 
         &__item {
             &-info {
+                max-width: none;
                 min-height: auto;
                 border-left: 0;
                 border-top: 4px solid rgba(255, 255, 255, 0.3);
@@ -276,7 +287,6 @@
     .section-main {
         margin-top: -95px;
         padding-top: 95px;
-
         &__quote {
             margin-top: -95px;
             padding-top: 231px;
@@ -290,8 +300,6 @@
         }
 
         &__list {
-            margin-bottom: 30px;
-
             &-items {
                 margin-bottom: 30px;
             }
@@ -316,6 +324,7 @@
         }
 
         &__cards {
+            padding-top: 30px;
             .hero-title {
                 font-size: 3em;
                 margin-bottom: 30px;

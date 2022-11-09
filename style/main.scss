@@ -1,7 +1,8 @@
 @use 'fonts';
 @use 'UI-kit';
 @use 'basic';
-@use './header_footer/header-dark';
+@use './header_footer/header';
+@use './header_footer/mobile-menu';
 @use './homepage-modules/section-main';
 @use './homepage-modules/section-team-member';
 @use './homepage-modules/section-company';
