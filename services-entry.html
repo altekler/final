@@ -134,7 +134,25 @@
     </section>
     <div class="form-entry">
         <input type="checkbox" id="checkbox-form" class="form__checkbox">
-        <div class="form__wrapper"></div>
+        <div class="form__wrapper">
+            <form action="/" method="post" name="form__contact" class="form__contact">
+                <div class="form__header"><h5 class="hero-title">We would like to help you</h5>
+                    <label for="checkbox-form" class="form__closing-element">
+                        <div class="form__closing-icon"></div>
+                    </label>
+                </div> 
+                <label class="form__label">
+                    <input type="text" class="form__input" placeholder="Name" required></label>
+                <label class="form__label"><textarea name="name" class="form__text-area" wrap="hard"
+                        placeholder="Message" required></textarea></label>
+                <span class="form__text">How to answer you?</span>
+                <label class="form__label"><input type="tel" class="form__input" pattern="[0-9]{12}" maxlength="12"
+                        placeholder="Phone" required></label>
+                <label class="form__label"><input type="email" class="form__input" placeholder="Email" required>
+                </label>
+                <button type="submit" class="botton">Send message</button>
+            </form>
+        </div>
     </div>
     <section class="section-publications">
         <div class="container">
