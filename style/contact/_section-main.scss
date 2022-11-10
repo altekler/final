@@ -4,7 +4,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;
-        padding: 60px 110px;
+        padding: 0px 110px 60px;
     }
     &__contact{
         display: flex;
@@ -50,7 +50,7 @@ color: $active--regular-color;
 @media all and (max-width: 1024px) {
     .section-main{
         &__inner{
-            padding: 60px 0;
+            padding: 0;
 }
     }
 }

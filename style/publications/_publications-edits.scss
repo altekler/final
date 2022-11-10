@@ -1,0 +1,30 @@
+@use "../UI-kit.scss" as *;
+
+.section-publications {
+    &__grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    }
+    }
+    @media all and (max-width: 1023px) {
+        .section-publications {
+            &__card {
+                &:last-child {
+                    grid-column: auto;
+                }
+            }
+        }
+    }
+    @media all and (max-width: 992px) {
+        .section-publications {
+            &__grid-container {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+    @media all and (max-width: 767px) {
+        .section-publications {
+            &__grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
