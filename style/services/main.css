@@ -845,6 +845,11 @@ ol li:last-child {
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
   }
 }
+@media all and (max-width: 767px) {
+  .section-company__item:nth-child(n+7) {
+    display: none;
+  }
+}
 .footer {
   background-color: #F5F5FA;
 }

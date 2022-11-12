@@ -97,3 +97,12 @@
         }
     }
 }
+@media all and (max-width: 767px) {
+    .section-company {
+        &__item {
+            &:nth-child(n+7){
+                display: none;
+            }
+}
+    }
+}
