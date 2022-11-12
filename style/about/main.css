@@ -651,6 +651,12 @@ ol li:last-child {
     font-size: 4.6em;
   }
 }
+@media all and (max-width: 767px) {
+  .section-separator__text {
+    font-size: 3.6em;
+    letter-spacing: 13px;
+  }
+}
 .section-achievements {
   padding: 30px 0;
   background-color: #F5F5FA;

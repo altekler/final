@@ -29,3 +29,11 @@
 }
     }
 }
+@media all and (max-width: 767px){
+    .section-separator {
+        &__text {
+            font-size: 3.6em;
+            letter-spacing: 13px;
+}
+    }
+}
