@@ -29,6 +29,8 @@ ul{
 ol{
     list-style-type: decimal;
     li{
+        
+        font-weight: 700;
         color:$accent-color;
         font-size: 1.8em;
         line-height: 144%;
@@ -102,25 +104,14 @@ ol{
     &--color-alt{
         color: $main--alt-color;
     }
-}
-
-
-.list {
-    &-unordered {
-        font-weight: 400;
-        font-size: 1.8em;
-        line-height: 2.6em;
-        color: $basic-black-color;
-    }
-
-    &-ordered {
-        font-weight: 400;
-        font-size: 1.8em;
-        line-height: 2.6em;
-        color: $basic-black-color;
+    &--small-gray{
+        font-weight: 700;
+font-size: 1.2em;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: $gray--text-color;
     }
 }
-
 
 .link {
     font-weight: 400;
@@ -168,7 +159,7 @@ ol{
     }
 }
 .botton{
-    width: 100%;
+    
     font-weight: 700;
     font-size: 1.6em;
     padding: 18px 30px;
@@ -184,5 +175,25 @@ ol{
     }
     &:active{
        background-color: $active--active-color;
+    }
+}
+.mark{
+    border-radius: 12px;
+    padding: 10px 30px;
+    cursor: pointer;
+&__wrapper{
+    display: flex;
+    max-width: fit-content;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    outline: 2px solid $gray--separator-color;
+    background-color: $gray--separator-color;
+    font-weight: 700;
+font-size: 16px;
+color: $main--regular-color;
+}
+    &--active{
+        background-color: $basic-white-color;
     }
 }

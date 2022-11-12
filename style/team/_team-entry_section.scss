@@ -1,0 +1,120 @@
+@use '../UI-kit' as *;
+.section-main{
+    &__grid-container{
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        margin-bottom: 60px;
+        padding: 0 80px;
+        column-gap: 60px;
+        grid-template-areas:
+         "image titles"
+         "image line"
+         "image info";
+    }
+    &__image{
+        border-radius: 12px;
+        grid-area: image;
+        overflow: hidden;
+        max-height: 500px;
+        // object-position: -20% center;
+        img{
+            max-width: none;
+            transform: translateX(-10%);
+            max-height: 100%;
+        }
+    }
+    &__titles{
+        grid-area: titles;
+        margin-bottom: 30px;
+        .text--small-gray{
+            font-weight: 400;
+        }
+    }
+    .line-separator{
+        grid-area: line;
+        margin-bottom: 30px;
+    }
+    &__info{
+        grid-area: info;
+        .text{
+            line-height: 162%;
+            margin-bottom: 30px;
+        }
+        .title--regular{
+            margin-bottom: 15px;
+        }
+    }
+    &__social-block{
+        display: flex;
+        align-items: center;
+    }
+    .hero-title{
+        margin-bottom: 15px;
+    }
+    
+}
+@media all and (max-width:1024px){
+    .section-main{
+        &__grid-container{
+            padding: 0;
+            grid-template-columns: 300px 1fr;
+        }
+        &__image{
+            max-height: 375px;
+        }
+        &__social-block{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            .dot-separator{
+                display: none;
+            }
+        }
+}
+}
+@media all and (max-width:992px){
+    .section-main{
+        &__grid-container{
+            padding: 0;
+            grid-template-columns: 300px 1fr;
+            grid-template-areas:
+            "image titles"
+            "line line"
+            "info info";
+        }
+        &__image{
+            margin-bottom: 30px;
+        }
+        &__titles{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+}
+}
+@media all and (max-width:767px){
+    .section-main{
+        &__grid-container{
+            padding: 0;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "image"
+            "titles"
+            "line"
+            "info";
+        }
+        &__image{
+            max-width: 315px;
+            margin-bottom: 30px;
+            img{
+            transform: translateX(-7%);
+            }
+        }
+        &__titles{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+}
+}

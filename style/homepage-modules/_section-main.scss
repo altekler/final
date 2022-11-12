@@ -89,7 +89,7 @@
             font-size: 3.8em;
             font-weight: 700;
             color: $gray--text-color;
-
+            white-space: nowrap;
             &:hover {
                 color: $accent-color;
             }
@@ -209,15 +209,15 @@
         }
     }
 }
-@media all and (max-width: 1024px) {
-    .section-main {
-        &__item {
-            &-info {
-                max-width: 405px;
-            }
-        }
-    }
-}
+// @media all and (max-width: 1024px) {
+//     .section-main {
+//         &__item {
+//             &-info {
+//                 max-width: 405px;
+//             }
+//         }
+//     }
+// }
 
 @media all and (max-width: 992px) {
     .section-main {

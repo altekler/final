@@ -40,6 +40,7 @@ ol {
   list-style-type: decimal;
 }
 ol li {
+  font-weight: 700;
   color: #F0145A;
   font-size: 1.8em;
   line-height: 144%;
@@ -105,18 +106,12 @@ ol li:last-child {
 .text--color-alt {
   color: #46466E;
 }
-
-.list-unordered {
-  font-weight: 400;
-  font-size: 1.8em;
-  line-height: 2.6em;
-  color: #000000;
-}
-.list-ordered {
-  font-weight: 400;
-  font-size: 1.8em;
-  line-height: 2.6em;
-  color: #000000;
+.text--small-gray {
+  font-weight: 700;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
 }
 
 .link {
@@ -162,7 +157,6 @@ ol li:last-child {
 }
 
 .botton {
-  width: 100%;
   font-weight: 700;
   font-size: 1.6em;
   padding: 18px 30px;
@@ -179,6 +173,29 @@ ol li:last-child {
 }
 .botton:active {
   background-color: #006CCF;
+}
+
+.mark {
+  border-radius: 12px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.mark__wrapper {
+  display: flex;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  outline: 2px solid #E6E6F0;
+  background-color: #E6E6F0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #323264;
+}
+.mark--active {
+  background-color: #ffffff;
 }
 
 .header {
@@ -570,6 +587,7 @@ ol li:last-child {
   font-size: 3.8em;
   font-weight: 700;
   color: #B3B3BA;
+  white-space: nowrap;
 }
 .section-main__list-item:hover {
   color: #F0145A;
@@ -657,11 +675,6 @@ ol li:last-child {
   }
   .section-main__title {
     margin-bottom: 305px;
-  }
-}
-@media all and (max-width: 1024px) {
-  .section-main__item-info {
-    max-width: 405px;
   }
 }
 @media all and (max-width: 992px) {
@@ -873,6 +886,7 @@ ol li:last-child {
 }
 
 .copyright {
+  text-align: center;
   font-weight: 400;
   font-size: 1.6em;
   color: #B3B3BA;

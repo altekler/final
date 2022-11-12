@@ -37,7 +37,14 @@
         border-radius: 8px;
         background-color: $basic-white-color;
         overflow: hidden;
-
+        // &-image{
+        //     max-height: 200px;
+        //     overflow: hidden;
+          
+        //   img{
+        //     transform: translateY(-15%);
+        //   }
+        // }
         &-info {
             padding: 30px;
             display: flex;
@@ -58,7 +65,22 @@
 
     }
 }
-
+// @media all and (max-width: 1024px) {
+//     .section-publications {
+//         &__card {
+//             // &-image{
+//             //     max-height: 200px;
+//             //     overflow: hidden;
+              
+//             //   img{
+//             //     max-width: none;
+//             //     max-height: 100%;
+//             //     transform: translateY(none);
+//             //   }
+//             // }
+//         }
+//     }
+//     }
 // указал 1023, а не 1024 потому что в макете, на 1024 должно еще быть три колонки. 
 // не указазал 992 потому что третья колонка переносится на 1019
 @media all and (max-width: 1023px) {
@@ -67,6 +89,16 @@
             &:last-child {
                 grid-column: 1 / 3;
             }
+            // &-image{
+            //     max-height: 200px;
+            //     overflow: hidden;
+              
+            //   img{
+            //     max-width: 100%;
+            //     max-height: none;
+            //     transform: translateY(-15%);
+            //   }
+            // }
         }
     }
 }
@@ -85,6 +117,14 @@
             &:last-child {
                 grid-column: 1 / 2;
             }
+            // &-image{
+            //     max-height: 200px;
+            //     overflow: hidden;
+              
+            //   img{
+            //     transform: translateY(none);
+            //   }
+            // }
         }
     }
 }

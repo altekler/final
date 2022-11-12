@@ -1,0 +1,73 @@
+@use '../UI-kit' as *;
+.section-main{
+    margin-bottom: 60px;
+    .hero-title{
+        margin: 0 90px 60px;
+    }
+    &__grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
+        gap: 60px;
+       justify-items: center;
+    }
+    .card{
+        &-image{
+            overflow: hidden;
+            max-width: 493px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        &-info{
+            box-sizing: border-box;
+            display: flex;
+            max-width: 493px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__icon{
+            display: flex;
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            justify-content: center;
+            align-items: center;
+            background-color: $gray--bg_alt-color;
+        }
+        .title{
+            margin-bottom: 5px;
+        }
+        .text--small-gray{
+            font-weight: 400;
+        }
+    
+    &:hover{
+        .title{
+            color:$accent-color;
+        }
+        .card__icon{
+            svg{
+                path{
+                    stroke: $accent-color;
+                }
+            }
+        }
+    }
+}
+}
+@media all and (max-width: 992px){
+    .section-main{
+        .hero-title{
+            margin: 0 0px 60px;
+        }
+        &__grid-container{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+}
+}
+@media all and (max-width: 767px){
+    .section-main{
+        &__grid-container{
+            grid-template-columns: 1fr;
+        }
+}
+}
