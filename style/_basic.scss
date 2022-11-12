@@ -154,7 +154,7 @@ color: $gray--text-color;
         }
 
         &:hover {
-            outline: 4px solid $gray--separator-color;
+            opacity: 0.6;
         }
     }
 }

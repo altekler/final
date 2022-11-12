@@ -1,0 +1,74 @@
+@use '../UI-kit' as *;
+
+.section-main {
+    margin-bottom: 60px;
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+       margin: 0 110px;
+        gap: 30px;
+    }
+
+    &__info {
+        max-width: 932px;
+        .hero-title{
+            margin-bottom: 30px;
+            line-height: 110%;
+        }
+        .text{
+            font-size: 1.9em;
+            margin-bottom: 30px;
+            line-height: 158%;
+        }
+    }
+    &__aside{
+        display: flex;
+        min-width: 388px;
+        padding-left: 30px;
+        flex-direction: column;
+        :last-child{
+            margin-bottom: 0;
+        }
+        &--border{
+            border-left: 4px solid $gray--separator-color;
+        }
+    }
+    &__item{
+        margin-bottom: 40px;
+        &-points{
+            display: flex;
+            align-items: center;
+            gap:12px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media all and (max-width: 1024px){
+    .section-main {
+        &__inner {
+           margin: 0;
+        }
+}
+}
+@media all and (max-width: 992px){
+    .section-main {
+        &__inner {
+          flex-direction: column;
+        }
+        &__aside--adaptive{
+            .hero-title{
+            margin-left: -30px;
+            }
+        }
+}
+}
+@media all and (max-width: 767px){
+    .section-main {
+        &__aside{
+            min-width: 0;
+        }
+        .hero-title{
+            font-size: 3em;
+        }
+    }
+}

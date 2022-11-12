@@ -1,0 +1,31 @@
+@use '../UI-kit' as *;
+
+.section-separator {
+    max-width: 1920px;
+    margin: 0 auto 60px;
+
+    &__image {
+        position: relative;
+    }
+
+    &__text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 9.6em;
+        letter-spacing: 63px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    }
+}
+@media all and (max-width: 992px){
+    .section-separator {
+        &__text {
+            font-size: 4.6em;
+}
+    }
+}
