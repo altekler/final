@@ -8,19 +8,26 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
         gap: 60px;
-       justify-items: center;
     }
     .card{
         &-image{
             overflow: hidden;
-            max-width: 493px;
+            width: 100%;
             border-radius: 12px;
             margin-bottom: 15px;
+            height: 400px;
+
+        img {
+            max-width: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
         }
         &-info{
             box-sizing: border-box;
             display: flex;
-            max-width: 493px;
             justify-content: space-between;
             align-items: center;
         }
@@ -66,6 +73,10 @@
 }
 @media all and (max-width: 767px){
     .section-main{
+        .card{
+            &-image{
+                height: 300px;
+            }}
         &__grid-container{
             grid-template-columns: 1fr;
         }

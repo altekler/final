@@ -571,18 +571,26 @@ ol li:last-child {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
   gap: 60px;
-  justify-items: center;
 }
 .section-main .card-image {
   overflow: hidden;
-  max-width: 493px;
+  width: 100%;
   border-radius: 12px;
   margin-bottom: 15px;
+  height: 400px;
+}
+.section-main .card-image img {
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 .section-main .card-info {
   box-sizing: border-box;
   display: flex;
-  max-width: 493px;
   justify-content: space-between;
   align-items: center;
 }
@@ -617,6 +625,9 @@ ol li:last-child {
   }
 }
 @media all and (max-width: 767px) {
+  .section-main .card-image {
+    height: 300px;
+  }
   .section-main__grid-container {
     grid-template-columns: 1fr;
   }

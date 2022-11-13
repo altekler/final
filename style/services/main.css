@@ -739,8 +739,8 @@ ol li:last-child {
   }
   .section-main__title {
     max-width: 315px;
-    line-height: 110%;
-    margin-bottom: 159px;
+    line-height: 46px;
+    margin-bottom: 199px;
   }
   .section-main__list-items {
     margin-bottom: 30px;
