@@ -34,30 +34,42 @@
 
     // минусовый марджин повторно используется что бы можно было повторно использовать секцию и не фиксить падинг
     &__quote {
+        position: relative;
+        align-items: center;
+        height: 100vh;
         margin-top: -125px;
-        padding-top: 477px;
-        padding-bottom: 30px;
         background: url(../assets/images/homepage/Symbol.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 100vh;
         margin-bottom: 60px;
+        &::after{
+            display: none;
+        }
     }
-
+// Корочеееее)) использовал абсолюты что бы при ЛЮБОМ разширении все находилось по центру и не писать лишний код в адаптив
     &__title {
-        margin: 0 auto;
-        margin-bottom: 405px;
+        position: absolute;
+        left: 50%;
+        top:50%;
         font-weight: 700;
         font-size: 3.8em;
         color: $basic-white-color;
         text-align: center;
+        white-space: nowrap;
+        transform: translate(-50%, -70%);
+        &::after{
+            display: none;
+        }
     }
 
     &__vector {
         display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
         max-width: 42px;
-        margin: 0 auto;
-
+        transform: translate(-50%, -50%);
         &:hover {
             svg {
                 circle {
@@ -68,6 +80,9 @@
                     stroke: $accent-color;
                 }
             }
+        }
+        &::after{
+            display: none;
         }
     }
 
@@ -199,13 +214,7 @@
     .section-main {
 
         &__quote {
-            padding-top: 377px;
             margin-bottom: 60px;
-            background-size: auto;
-        }
-
-        &__title {
-            margin-bottom: 305px;
         }
     }
 }
@@ -217,13 +226,6 @@
 
         &__quote {
             margin-top: -220px;
-            padding-top: 489px;
-            background-size: cover;
-        }
-
-        &__title {
-            margin-bottom: 417px;
-
         }
 
         &__list {
@@ -280,14 +282,12 @@
         padding-top: 95px;
         &__quote {
             margin-top: -95px;
-            padding-top: 231px;
             margin-bottom: 30px;
         }
 
         &__title {
             max-width: 315px;
-            line-height: 46px;
-            margin-bottom: 199px;
+            white-space: normal;
         }
 
         &__list {
