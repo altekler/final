@@ -1,5 +1,13 @@
 @use '../UI-kit' as *;
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    // что бы футер всегда был снизу
+}
+
 .section-main{
+    flex-grow: 2;
     &__grid-container{
         display: grid;
         grid-template-columns: 400px 1fr;

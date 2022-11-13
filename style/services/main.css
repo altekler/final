@@ -38,8 +38,10 @@ ul li:last-child {
 
 ol {
   list-style-type: decimal;
+  list-style-position: inside;
 }
 ol li {
+  white-space: nowrap;
   font-weight: 700;
   color: #F0145A;
   font-size: 1.8em;
@@ -573,6 +575,9 @@ ol li:last-child {
 .section-main__vector {
   display: block;
   position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
   left: 50%;
   bottom: 3%;
   max-width: 42px;

@@ -19,7 +19,7 @@
 
     &__photo {
         min-width: 400px;
-
+        max-height: 298px;
         img {
             max-width: none;
             width: 100%;
@@ -57,7 +57,14 @@
         }
     }
 }
+@media all and (max-width: 1440px) {
+    .section-team-member {
+        &__photo {
+            max-height: none;
 
+        }
+    }
+}
 @media all and (max-width: 992px) {
     .section-team-member {
         &__block {

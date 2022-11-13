@@ -1,5 +1,13 @@
 @use '../UI-kit' as *;
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    // что бы футер всегда был снизу
+}
+
 .section-main{
+    flex-grow: 2;
     &__inner{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -54,7 +62,7 @@ color: $active--regular-color;
 @media all and (max-width: 1024px) {
     .section-main{
         &__inner{
-            padding: 0;
+            padding: 0 0 60px;
 }
     }
 }

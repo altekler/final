@@ -66,6 +66,9 @@
     &__vector {
         display: block;
         position: absolute;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
         left: 50%;
         bottom: 3%;
         max-width: 42px;

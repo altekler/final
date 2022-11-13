@@ -38,8 +38,10 @@ ul li:last-child {
 
 ol {
   list-style-type: decimal;
+  list-style-position: inside;
 }
 ol li {
+  white-space: nowrap;
   font-weight: 700;
   color: #F0145A;
   font-size: 1.8em;
@@ -561,6 +563,15 @@ ol li:last-child {
     margin-bottom: 30px;
   }
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.section-main {
+  flex-grow: 2;
+}
 .section-main__inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -609,7 +620,7 @@ ol li:last-child {
 
 @media all and (max-width: 1024px) {
   .section-main__inner {
-    padding: 0;
+    padding: 0 0 60px;
   }
 }
 @media all and (max-width: 992px) {

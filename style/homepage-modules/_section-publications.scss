@@ -67,18 +67,6 @@
 
     }
 }
-// указал 1023, а не 1024 потому что в макете, на 1024 должно еще быть три колонки. 
-// не указазал 992 потому что третья колонка переносится на 1019
-@media all and (max-width: 1023px) {
-    .section-publications {
-        &__card {
-            &:last-child {
-                grid-column: 1 / 3;
-            }
-        }
-    }
-}
-
 @media all and (max-width: 767px) {
     .section-publications {
         .hero-title {
@@ -88,10 +76,22 @@
         &__grid-container {
             grid-template-columns: 1fr;
         }
-
+    }
+}
+@media all and (min-width: 768px) {
+    .section-publications {
         &__card {
             &:last-child {
-                grid-column: 1 / 2;
+                grid-column: 1 / 3;
+            }
+        }
+    }
+}
+@media all and (min-width: 1024px) {
+    .section-publications {
+        &__card {
+            &:last-child {
+                grid-column: auto;
             }
         }
     }
