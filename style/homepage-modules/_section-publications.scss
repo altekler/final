@@ -37,16 +37,19 @@
         border-radius: 8px;
         background-color: $basic-white-color;
         overflow: hidden;
-        &-image{
+
+        &-image {
             height: 200px;
-          img{
-            max-width: none;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center center;
-          }
+
+            img {
+                max-width: none;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
         }
+
         &-info {
             padding: 30px;
             display: flex;
@@ -67,6 +70,7 @@
 
     }
 }
+
 @media all and (max-width: 767px) {
     .section-publications {
         .hero-title {
@@ -78,6 +82,7 @@
         }
     }
 }
+
 @media all and (min-width: 768px) {
     .section-publications {
         &__card {
@@ -87,6 +92,7 @@
         }
     }
 }
+
 @media all and (min-width: 1024px) {
     .section-publications {
         &__card {

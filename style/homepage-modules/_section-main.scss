@@ -43,22 +43,25 @@
         background-repeat: no-repeat;
         background-size: 100vh;
         margin-bottom: 60px;
-        &::after{
+
+        &::after {
             display: none;
         }
     }
-// Корочеееее)) использовал абсолюты что бы при ЛЮБОМ разширении все находилось по центру и не писать лишний код в адаптив
+
+    // Корочеееее)) использовал абсолюты что бы при ЛЮБОМ разширении все находилось по центру и не писать лишний код в адаптив
     &__title {
         position: absolute;
         left: 50%;
-        top:50%;
+        top: 50%;
         font-weight: 700;
         font-size: 3.8em;
         color: $basic-white-color;
         text-align: center;
         white-space: nowrap;
         transform: translate(-50%, -70%);
-        &::after{
+
+        &::after {
             display: none;
         }
     }
@@ -74,6 +77,7 @@
         bottom: 3%;
         max-width: 50px;
         transform: translate(-50%, -50%);
+
         &:hover {
             svg {
                 circle {
@@ -85,7 +89,8 @@
                 }
             }
         }
-        &::after{
+
+        &::after {
             display: none;
         }
     }
@@ -109,6 +114,7 @@
             font-weight: 700;
             color: $gray--text-color;
             white-space: nowrap;
+
             &:hover {
                 color: $accent-color;
             }
@@ -147,6 +153,7 @@
 
     &__cards {
         padding-top: 60px;
+
         .link {
             display: flex;
             align-items: center;
@@ -284,6 +291,7 @@
     .section-main {
         margin-top: -95px;
         padding-top: 95px;
+
         &__quote {
             margin-top: -95px;
             margin-bottom: 30px;
@@ -320,6 +328,7 @@
 
         &__cards {
             padding-top: 30px;
+
             .hero-title {
                 font-size: 3em;
                 margin-bottom: 30px;

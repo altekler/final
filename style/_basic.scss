@@ -14,32 +14,38 @@ a {
 img {
     max-width: 100%;
 }
-ul{
+
+ul {
     list-style-type: disc;
-    li{
-        color:$accent-color;
+
+    li {
+        color: $accent-color;
         font-size: 1.8em;
         line-height: 144%;
         margin-bottom: 15px;
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0px;
         }
     }
 }
-ol{
+
+ol {
     list-style-type: decimal;
     list-style-position: inside;
-    li{
+
+    li {
         white-space: nowrap;
         font-weight: 700;
-        color:$accent-color;
+        color: $accent-color;
         font-size: 1.8em;
         line-height: 144%;
         margin-bottom: 15px;
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0px;
         }
-        }
+    }
 }
 
 
@@ -96,21 +102,25 @@ ol{
     &--bold {
         font-weight: 700;
     }
-    &--color-white{
-        color:$basic-white-color;
+
+    &--color-white {
+        color: $basic-white-color;
     }
-    &--color-regular{
+
+    &--color-regular {
         color: $main--regular-color;
     }
-    &--color-alt{
+
+    &--color-alt {
         color: $main--alt-color;
     }
-    &--small-gray{
+
+    &--small-gray {
         font-weight: 700;
-font-size: 1.2em;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: $gray--text-color;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $gray--text-color;
     }
 }
 
@@ -159,8 +169,9 @@ color: $gray--text-color;
         }
     }
 }
-.botton{
-    
+
+.botton {
+
     font-weight: 700;
     font-size: 1.6em;
     padding: 18px 30px;
@@ -171,30 +182,35 @@ color: $gray--text-color;
     border-radius: 12px;
     border: none;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: $active--hover-color;
     }
-    &:active{
-       background-color: $active--active-color;
+
+    &:active {
+        background-color: $active--active-color;
     }
 }
-.mark{
+
+.mark {
     border-radius: 12px;
     padding: 10px 30px;
     cursor: pointer;
-&__wrapper{
-    display: flex;
-    max-width: fit-content;
-    align-items: center;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    outline: 2px solid $gray--separator-color;
-    background-color: $gray--separator-color;
-    font-weight: 700;
-font-size: 16px;
-color: $main--regular-color;
-}
-    &--active{
+
+    &__wrapper {
+        display: flex;
+        max-width: fit-content;
+        align-items: center;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        outline: 2px solid $gray--separator-color;
+        background-color: $gray--separator-color;
+        font-weight: 700;
+        font-size: 16px;
+        color: $main--regular-color;
+    }
+
+    &--active {
         background-color: $basic-white-color;
     }
 }

@@ -22,18 +22,20 @@
         text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
     }
 }
-@media all and (max-width: 992px){
+
+@media all and (max-width: 992px) {
     .section-separator {
         &__text {
             font-size: 4.6em;
-}
+        }
     }
 }
-@media all and (max-width: 767px){
+
+@media all and (max-width: 767px) {
     .section-separator {
         &__text {
             font-size: 3.6em;
             letter-spacing: 13px;
-}
+        }
     }
 }

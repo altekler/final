@@ -3,11 +3,14 @@
 .header {
     background-color: $basic-white-color;
     margin-bottom: 60px;
+
     &__page {
         color: $main--regular-color;
     }
+
     &__language {
         color: $gray--text-color;
+
         &--active {
             color: $basic-white-color;
         }
@@ -36,15 +39,18 @@
 
     &__link {
         color: $active--regular-color;
+
         &--active {
             color: $accent-color;
         }
+
         &:hover {
             color: $active--regular-color;
             border-bottom: 2px solid $active--regular-color;
         }
     }
 }
+
 .mobile-menu {
     &__icon {
         background: $main--regular-color;
@@ -53,11 +59,11 @@
         &::before {
             background: $main--regular-color;
         }
-}
+    }
 }
 
 @media all and (max-width: 767px) {
     .header {
         margin-bottom: 30px;
-}
+    }
 }

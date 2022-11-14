@@ -1,58 +1,67 @@
 @use '../UI-kit' as *;
-.section-achievements{
+
+.section-achievements {
     padding: 30px 0;
     background-color: $gray--bg-color;
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap:30px;
+        gap: 30px;
     }
-    &__grid-container{
+
+    &__grid-container {
         display: grid;
         grid-template-columns: repeat(4, minmax(132px, 370px));
         gap: 40px;
     }
-    &__item{
+
+    &__item {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $basic-white-color;
-        padding:0 18px;
+        padding: 0 18px;
         border-radius: 12px;
         min-height: 110px;
     }
+
     .circle-scroll {
         &__item {
-            &:nth-child(n+4){
+            &:nth-child(n+4) {
                 display: none;
             }
         }
+    }
 }
-}
-@media all and (max-width: 992px){
-    .section-achievements{
-        &__item{
+
+@media all and (max-width: 992px) {
+    .section-achievements {
+        &__item {
             min-height: 90px;
-}
+        }
     }
 }
-@media all and (max-width: 767px){
-    .section-achievements{
-        &__item{
-            &:nth-child(n+2){
+
+@media all and (max-width: 767px) {
+    .section-achievements {
+        &__item {
+            &:nth-child(n+2) {
                 display: none;
             }
-}
-&__grid-container{
-    grid-template-columns: 255px;
-    }
-    .circle-scroll {
-        &__item {
-            &:nth-child(n+4){
-                display: block;
+        }
+
+        &__grid-container {
+            grid-template-columns: 255px;
+        }
+
+        .circle-scroll {
+            &__item {
+                &:nth-child(n+4) {
+                    display: block;
+                }
             }
         }
-}
-}
+    }
 }

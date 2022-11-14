@@ -116,11 +116,12 @@
 
         .form__contact {
             box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
-            .form__header{ 
+
+            .form__header {
                 .hero-title {
-                margin-right: 48px;
+                    margin-right: 48px;
+                }
             }
-        }
         }
     }
 
@@ -147,6 +148,7 @@
         }
 
         &-icon {
+
             &::after,
             &::before {
                 content: "";
@@ -155,7 +157,7 @@
                 background: $basic-white-color;
                 width: 18px;
                 height: 2px;
-                top:50%
+                top: 50%
             }
 
             &::after {
@@ -172,6 +174,7 @@
         }
     }
 }
+
 @keyframes wrapper-form {
     0% {
         opacity: 0;
@@ -188,10 +191,10 @@
             margin-bottom: 30px;
         }
 
-        &__wrapper{
-            .form__contact{
+        &__wrapper {
+            .form__contact {
                 position: fixed;
-                top:0;
+                top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
